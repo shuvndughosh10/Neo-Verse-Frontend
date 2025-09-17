@@ -1,0 +1,383 @@
+/* Login Pages Styles */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Login Header */
+.login-header {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #718096;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #2d3748;
+}
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.title p {
+  margin: 0.5rem 0 0 0;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Admin Login Specific */
+.admin-login .logo {
+  background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+}
+
+.admin-login .login-btn {
+  background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+}
+
+.admin-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(237, 137, 54, 0.3);
+}
+
+/* Student Login Specific */
+.student-login .logo {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+}
+
+.student-login .login-btn {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+}
+
+.student-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(72, 187, 120, 0.3);
+}
+
+/* Faculty Login Specific */
+.faculty-login .logo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.faculty-login .login-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.faculty-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Admission Login Specific */
+.admission-login .logo {
+  background: linear-gradient(135deg, #9f7aea 0%, #805ad5 100%);
+}
+
+.admission-login .login-btn {
+  background: linear-gradient(135deg, #9f7aea 0%, #805ad5 100%);
+}
+
+.admission-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(159, 122, 234, 0.3);
+}
+
+/* Fee Login Specific */
+.fee-login .logo {
+  background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+}
+
+.fee-login .login-btn {
+  background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+}
+
+.fee-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(245, 101, 101, 0.3);
+}
+
+/* Library Login Specific */
+.library-login .logo {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+}
+
+.library-login .login-btn {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+}
+
+.library-login .login-btn:hover {
+  box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);
+}
+
+/* Login Form */
+.login-form {
+  padding: 0 2rem 2rem;
+}
+
+.error-message {
+  background: #fed7d7;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #feb2b2;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.form-group label svg {
+  color: #718096;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f7fafc;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.password-toggle:hover {
+  background: #f7fafc;
+  color: #2d3748;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #5a67d8;
+  text-decoration: underline;
+}
+
+/* Login Footer */
+.login-footer {
+  background: #f7fafc;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.login-footer p {
+  margin: 0.5rem 0;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+/* Success Message */
+.success-message {
+  background: #c6f6d5;
+  color: #22543d;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Forgot Password Styles */
+.forgot-password-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  color: #4c51bf;
+}
+
+.forgot-password-form {
+  margin-top: 1rem;
+}
+
+.forgot-password-form h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.forgot-password-form p {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.back-to-login-btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: #718096;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.back-to-login-btn:hover {
+  background: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 10px;
+  }
+  
+  .login-container {
+    max-width: 100%;
+  }
+  
+  .login-header {
+    padding: 1.5rem;
+  }
+  
+  .login-form {
+    padding: 0 1.5rem 1.5rem;
+  }
+  
+  .login-footer {
+    padding: 1rem 1.5rem;
+  }
+  
+  .title h1 {
+    font-size: 1.5rem;
+  }
+}
